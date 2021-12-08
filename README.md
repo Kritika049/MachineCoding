@@ -1,1 +1,1 @@
-This is a LLD code for Splitwise
+This is a repo for machine codes
