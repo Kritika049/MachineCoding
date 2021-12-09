@@ -6,5 +6,4 @@ class userServiceInterface(metaclass=abc.ABCMeta):
     def addUser(self, id, name):
         pass
 
-    def addUser(self, userId1, userId2):
-        pass
+    
