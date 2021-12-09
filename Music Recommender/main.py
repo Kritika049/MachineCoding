@@ -23,4 +23,4 @@ my_playlist = PlaylistService.addPlaylist(
 PlaylistService.addSongToPlaylist('song4', 'playlist1')
 
 # print(my_playlist.getSongs())
-print(SongsService.recommend_songs('user1'))
+print(SongsService.recommend_song('user1'))
