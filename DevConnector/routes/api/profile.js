@@ -59,18 +59,6 @@ router.post(
       ...rest
     } = req.body;
 
-    // build a profile
-    const profileFields = {
-      user: req.user.id,
-      website:
-        website && website !== ''
-          ? normalize(website, { forceHttps: true })
-          : '',
-      skills: Array.isArray(skills)
-        ? skills
-        : skills.split(',').map((skill) => ' ' + skill.trim()),
-      ...rest
-    };
 
     // Build socialFields object
     const socialFields = { youtube, twitter, instagram, linkedin, facebook };
