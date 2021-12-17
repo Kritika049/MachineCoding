@@ -104,7 +104,6 @@ router.get('/', async (req, res) => {
 // @access   Public
 router.get(
   '/user/:user_id',
-  checkObjectId('user_id'),
   async ({ params: { user_id } }, res) => {
     try {
       const profile = await Profile.findOne({
